@@ -1,0 +1,2 @@
+welcome=¡Bienvenido!
+long_text=Este es un\ntexto muy\nlargo
