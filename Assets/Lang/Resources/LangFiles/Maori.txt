@@ -1,0 +1,2 @@
+welcome=Nau mai!
+long_text=He kupu\ntino roa\ntēnei

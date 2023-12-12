@@ -5,16 +5,13 @@ public static class PrefsHolder
 {
     private const string Lang = "Lang";
 
-    public static void SaveLang(SystemLanguage lang)
+    public static void SaveLang(String lang)
     {
-        PlayerPrefs.SetString(Lang, lang.ToString());
+        PlayerPrefs.SetString(Lang, lang);
     }
 
-    public static SystemLanguage GetLang()
+    public static String GetLang()
     {
-        Enum.TryParse(
-            PlayerPrefs.GetString(Lang, Application.systemLanguage.ToString()),
-            out SystemLanguage language);
-        return language;
+        return PlayerPrefs.GetString(Lang, SystemLanguage.English.ToString());
     }
 }
